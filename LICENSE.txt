@@ -1,0 +1,30 @@
+//  License for the `.nes` file and graphical assets in the `res/` folder:
+
+Copyright (C) 2024  Hylke Bons (hylke@planetpeanut.studio)
+
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+You are free to:
+    * Share - copy and redistribute the work
+    * Adapt - remix, transform, and build upon the work
+
+  Under the following terms:
+    * Attribution - You must give credit, provide a link to the license, and indicate any changes
+    * NonCommercial - You may not use the work for commercial purposes
+    * ShareAlike - If you adapt the work, you must do so under the same license
+
+
+//  License for the source code:
+
+Copyright (C) 2024  Hylke Bons (hylke@planetpeanut.studio)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.

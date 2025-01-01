@@ -1,0 +1,34 @@
+name: NES Build
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  PROJECT_NAME: ScrubbyScramble
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Download and Extract GBDK-2020
+        run: |
+          wget https://github.com/gbdk-2020/gbdk-2020/releases/download/4.3.0/gbdk-linux64.tar.gz
+          tar -xzf gbdk-linux64.tar.gz
+          mv gbdk ../
+
+      - name: Build
+        run: make
+
+      - name: Get Commit Hash
+        run: echo "COMMIT_HASH=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PROJECT_NAME }}-${{ env.COMMIT_HASH }}.nes
+          path: obj/${{ env.PROJECT_NAME }}.nes
