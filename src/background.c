@@ -10,7 +10,7 @@
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 //  GNU General Public License for more details.
 
-#pragma bank 0
+#pragma bank 1
 
 
 #include "lib/tileset.h"
